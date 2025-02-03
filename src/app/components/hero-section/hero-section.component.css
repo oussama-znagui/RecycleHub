@@ -1,0 +1,33 @@
+:host{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    padding: 3rem 3rem;
+    margin: 1rem auto;
+    background-color: #152218;
+    border-radius: 2rem;
+    
+
+}
+.hero{
+    width: 50%;
+    color: white !important;
+}
+
+.hero h1{
+ 
+    font-size: 3rem;
+    color: white;
+
+}
+
+img{
+    width: 45%;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+ 
+}
+
+
+
