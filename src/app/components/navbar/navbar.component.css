@@ -1,0 +1,46 @@
+:host{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    padding: 1rem 2rem;
+    margin: auto;
+}
+
+nav a{
+    margin: 0 1rem ;
+    text-decoration: none;
+    color: #1a271d;
+}
+
+.login{
+    color: #1a271d;
+    background-color: rgb(227, 241, 225);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    margin: 0 .5rem;
+    font-weight: 600;
+}
+.auth{
+    display: flex;
+}
+
+.signup{
+    background-color: #1a271d;
+    color: rgb(227, 241, 225);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    margin: 0 .5rem;
+    display: flex;
+    gap: .4rem;
+    font-weight: 600;
+}
+
+.signup svg{
+    width: 1rem;
+    
+    height: 1rem;
+    display: block;
+}
