@@ -1,3 +1,8 @@
 
-<app-navbar />
+<app-navbar (loginOnEvent)="login=true" />
+
 <app-hero-section />
+
+@if (login) {
+    <app-login (loginOffEvent)="login=false" />
+}
