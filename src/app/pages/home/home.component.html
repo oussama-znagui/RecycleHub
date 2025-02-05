@@ -1,8 +1,13 @@
 
-<app-navbar (loginOnEvent)="login=true" />
+<app-navbar (loginOnEvent)="login=true"  (signupOnEvent)="signup=true"/>
 
 <app-hero-section />
 
 @if (login) {
-    <app-login (loginOffEvent)="login=false" />
+    <app-login (loginOffEvent)="login=false"  (signupOnEvent)="login=false; signup=true"/>
 }
+
+@if (signup) {
+    <app-signup (signupOffEvent)="signup=false" />
+}
+

@@ -8,10 +8,15 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 export class LoginComponent {
   @Output() loginOffEvent = new EventEmitter();
+  @Output() signupOnEvent = new EventEmitter();
 
   loginOff(){
     console.log("hello")
     this.loginOffEvent.emit();
+  }
+
+  signupOn(){
+    this.signupOnEvent.emit();
   }
 
 }

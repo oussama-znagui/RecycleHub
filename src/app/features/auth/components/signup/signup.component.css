@@ -1,0 +1,72 @@
+:host{
+   
+    
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px); 
+    z-index: 100;
+    position: absolute;
+    top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    
+
+  
+}
+
+
+
+.container{
+    width: 30%;
+    background-color: #98f3ad;
+    padding: 2rem 2rem;
+    border-radius: 2rem;
+   
+}
+
+.container h1{
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+input, select{
+    height: 2rem;
+    display: block;
+  width: 100%;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+}
+
+.login_form{
+    width: 80%;
+    margin: auto;
+   
+}
+
+.signup{
+    background-color: #1a271d;
+    color: rgb(227, 241, 225);
+    border: none;
+    padding: .8rem 2rem;
+    border-radius: 2rem;
+  
+    display: flex;
+    gap: .4rem;
+    font-weight: 600;
+}
+
+.signup svg{
+    width: 1rem;
+    
+    height: 1rem;
+    display: block;
+}
+
+svg{
+    float: right;
+}
+
+
+

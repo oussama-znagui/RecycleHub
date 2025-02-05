@@ -8,9 +8,15 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 export class NavbarComponent {
   @Output() loginOnEvent = new EventEmitter();
+  @Output() signupOnEvent = new EventEmitter();
 
   loginOn(){
     console.log("hello")
     this.loginOnEvent.emit();
+  }
+
+  signupOn(){
+    console.log("hello")
+    this.signupOnEvent.emit();
   }
 }
