@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { inject, Injectable } from '@angular/core';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
 import { HttpClient } from '@angular/common/http';
 import { of } from 'rxjs';
@@ -8,15 +8,19 @@ import { User } from '../../../models/user';
 
 @Injectable()
 export class AuthEffects {
-  constructor(private actions$: Actions, private http: HttpClient) {}
+  private actions$ = inject(Actions);
+  private http = inject(HttpClient); 
+
 
   login$ = createEffect(() =>
     this.actions$.pipe(
       ofType(AuthActions.login),
       mergeMap(({ username, password }) =>
-        this.http.get<{ users: User[] }>('/assets/data.json').pipe(
-          map((data) => {
-            const user = data.users.find(u => u.username === username && u.password === password);
+        this.http.get<User[] >('http://localhost:3000/users').pipe(
+          map((users) => {console.log("jillali")
+            console.log(users)
+            const user = users.find(u => u.username === username);
+            console.log(user)
             return user
               ? AuthActions.loginSuccess({ user })
               : AuthActions.loginFailure({ error: 'Identifiants incorrects' });

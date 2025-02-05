@@ -1,0 +1,18 @@
+{
+    "users": [
+      {
+        "uuid": "1",
+        "username": "user1",
+        "email": "user1@example.com",
+        "password": "password123",
+        "role": "particulier"
+      },
+      {
+        "uuid": "2",
+        "username": "collector1",
+        "email": "collector1@example.com",
+        "password": "password456",
+        "role": "collecteur"
+      }
+    ]
+  }

@@ -6,21 +6,25 @@
           
         <h1>Login</h1>
 
-    <div class="login_form">
+    <form class="login_form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
         <div>
             <label for="">Username</label>
-            <input type="text">
+            <input type="text"  id="username" formControlName="username">
         </div>
         <div>
             <label for="">Password</label>
-            <input type="password">
+            <input id="password" type="password" formControlName="password">
         </div>
         
-        <button class="signup"><span>LogIn</span> <svg  aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+        <button type="submit" class="signup"><span>LogIn</span> <svg  aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/>
           </svg>
-          </button>
+          </button >
         <p>Avez vous deja un compte <a (click)="signupOn()">SignUp</a> </p>
-    </div>
+
+        
+      
+    </form>
+    
     </div>
     
