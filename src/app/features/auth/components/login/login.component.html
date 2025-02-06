@@ -21,6 +21,9 @@
           </svg>
           </button >
         <p>Avez vous deja un compte <a (click)="signupOn()">SignUp</a> </p>
+        @if (errorMessage$ | async ) {
+            <p class="error-message">{{ errorMessage$ | async }}</p>
+          }
 
         
       
