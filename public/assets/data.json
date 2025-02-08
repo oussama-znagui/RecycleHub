@@ -1,19 +1,81 @@
 {
-    "users": [
-      {
-        "uuid": "1",
-        "username": "user1",
-        "email": "user1@example.com",
-        "password": "password123",
-        "role": "particulier"
-      },
-      {
-        "uuid": "2",
-        "username": "collector1",
-        "email": "collector1@example.com",
-        "password": "password456",
-        "role": "collecteur"
-      }
-    ]
-
-  }
+  "users": [
+    {
+      "uuid": "1",
+      "username": "user1",
+      "email": "user1@example.com",
+      "password": "password123",
+      "role": "particulier"
+    },
+    {
+      "uuid": "2",
+      "username": "collector1",
+      "email": "collector1@example.com",
+      "password": "password456",
+      "role": "collecteur"
+    }
+  ],
+  "drop-off-requests": [
+    {
+      "id": 1,
+      "type_de_dechet": "plastique",
+      "photos": [],
+      "poids_estime": 1500,
+      "adresse_de_collecte": "12 Rue des Écologistes, Paris",
+      "date_creneau": "2025-02-07T10:00:00",
+      "notes_supplementaires": "Bouteilles en plastique uniquement.",
+      "id_particulier": 101
+    },
+    {
+      "id": 2,
+      "type_de_dechet": "verre",
+      "photos": [],
+      "poids_estime": 2000,
+      "adresse_de_collecte": "45 Avenue Verte, Lyon",
+      "date_creneau": "2025-02-07T15:30:00",
+      "notes_supplementaires": "Bocaux et bouteilles en verre.",
+      "id_particulier": 102
+    },
+    {
+      "id": 3,
+      "type_de_dechet": "papier",
+      "photos": [],
+      "poids_estime": 1200,
+      "adresse_de_collecte": "78 Boulevard Durable, Marseille",
+      "date_creneau": "2025-02-08T09:00:00",
+      "notes_supplementaires": "Journaux et magazines.",
+      "id_particulier": 1
+    },
+    {
+      "id": 4,
+      "type_de_dechet": "métal",
+      "photos": [],
+      "poids_estime": 1800,
+      "adresse_de_collecte": "23 Rue du Recyclage, Toulouse",
+      "date_creneau": "2025-02-08T17:45:00",
+      "notes_supplementaires": "Canettes en aluminium.",
+      "id_particulier": 104
+    },
+    {
+      "id": 5,
+      "type_de_dechet": "plastique",
+      "photos": [],
+      "poids_estime": 2500,
+      "adresse_de_collecte": "9 Impasse Verte, Bordeaux",
+      "date_creneau": "2025-02-09T11:15:00",
+      "notes_supplementaires": "Emballages alimentaires propres.",
+      "id_particulier": 105
+    },
+    
+    {
+      "type_de_dechet": "plastique",
+      "photos": [],
+      "poids_estime": 2500,
+      "adresse_de_collecte": "9  Verte, Bordeaux",
+      "date_creneau": "2025-02-09T11:15:00",
+      "notes_supplementaires": "Emballages alimentaires propres.",
+      "id_particulier": 105,
+      "id": "d966"
+    }
+  ]
+}

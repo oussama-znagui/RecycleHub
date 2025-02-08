@@ -1,0 +1,99 @@
+.container{
+    width: 80%;
+    margin: auto;
+    background-color: rgb(206, 223, 202);
+    backdrop-filter: blur(100px); 
+    padding: 2rem 3rem;
+    border-radius: 2rem;
+   
+}
+
+table{
+ width: 100%;
+ margin: 1rem 0;
+ color: #cddfd1;
+
+}
+table, th, td {
+    
+    border-collapse: collapse;
+    
+
+  }
+  th, td {
+    background-color: rgb(19, 19, 19);
+    padding: 8px;
+    text-align: left;
+    margin-top: 2rem;
+   padding: 1rem 1rem;
+   border-block: solid 2px #fff;
+  }
+
+  .container {
+    /* Dimensions et positionnement */
+
+  
+    /* Couleurs de fond */
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.8),
+      rgba(240, 240, 240, 0.8),
+      rgba(220, 255, 220, 0.8)
+    );
+  
+    /* Effet de flou */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  
+    /* Effet d'ombre */
+    box-shadow: 
+      0 8px 32px 0 rgba(31, 38, 135, 0.37),
+      inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+  
+    /* Bordures arrondies */
+    border-radius: 10px;
+  
+    /* Effet de verre */
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+ 
+
+
+button {
+    display: inline;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+button:hover {
+    transform: translateY(-2px);
+}
+button:active {
+    transform: translateY(0);
+}
+button svg {
+    margin-right: 8px;
+}
+.update {
+    background-color: #4CAF50;
+    color: white;
+}
+.update:hover {
+    background-color: #45a049;
+}
+.delete {
+    background-color: #f44336;
+    color: white;
+}
+.delete:hover {
+    background-color: #da190b;
+}
+.actions{
+    display: flex;
+    align-items: center;
+}

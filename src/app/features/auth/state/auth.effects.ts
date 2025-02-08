@@ -6,12 +6,13 @@ import { catchError, map, mergeMap } from 'rxjs/operators';
 import * as AuthActions from './auth.actions';
 import { User } from '../../../models/user';
 import { AuthService} from '../../../services/auth.service';
+import { Router } from '@angular/router';
 
 @Injectable()
 export class AuthEffects {
   private actions$ = inject(Actions);
-  private http = inject(HttpClient);
   private authService = inject(AuthService) 
+  private router = inject(Router)
 
 
   login$ = createEffect(() =>
@@ -28,5 +29,17 @@ export class AuthEffects {
         )
       )
     )
+  );
+
+
+   onLoginSuccess$ = createEffect(
+    () =>
+      this.actions$.pipe(
+        ofType(AuthActions.loginSuccess),
+        map(() => {
+          this.router.navigate(['/dashboard']);
+        })
+      ),
+    { dispatch: false }
   );
 }
