@@ -1,0 +1,9 @@
+.container{
+    background-color: rgb(152, 224, 130);
+    padding: 2rem 2.5rem;
+    width: 20%;
+    position: absolute;
+    left: 70%;
+    top: 18%;
+    border-radius: 1rem;
+}

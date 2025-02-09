@@ -1,7 +1,7 @@
 {
   "users": [
     {
-      "uuid": "1",
+   
       "username": "user1",
       "email": "user1@example.com",
       "password": "password123",
@@ -9,12 +9,13 @@
       "id": "c168"
     },
     {
-      "uuid": "2",
+     
       "username": "collector1",
       "email": "collector1@example.com",
       "password": "password456",
       "role": "collecteur",
-      "id": "8976"
+      "id": "8976",
+      "ville_id": 1
     },
     {
       "id": "aaf7",
@@ -110,62 +111,22 @@
   ],
   "drop-off-requests": [
     {
-      "id": "1",
-      "type_de_dechet": "plastique",
-      "photos": [],
-      "poids_estime": 1500,
-      "adresse_de_collecte": "12 Rue des Écologistes, Paris",
-      "date_creneau": "2025-02-07T10:00:00",
-      "notes_supplementaires": "Bouteilles en plastique uniquement.",
-      "id_particulier": 101
-    },
-    {
-      "id": "2",
-      "type_de_dechet": "verre",
-      "photos": [],
-      "poids_estime": 2000,
-      "adresse_de_collecte": "45 Avenue Verte, Lyon",
-      "date_creneau": "2025-02-07T15:30:00",
-      "notes_supplementaires": "Bocaux et bouteilles en verre.",
-      "id_particulier": 102
-    },
-    {
-      "id": "5",
-      "type_de_dechet": "plastique",
-      "photos": [],
-      "poids_estime": 2500,
-      "adresse_de_collecte": "9 Impasse Verte, Bordeaux",
-      "date_creneau": "2025-02-09T11:15:00",
-      "notes_supplementaires": "Emballages alimentaires propres.",
-      "id_particulier": 105
-    },
-    {
-      "type_de_dechet": "plastique",
-      "photos": [],
-      "poids_estime": 2500,
-      "adresse_de_collecte": "9  Verte, Bordeaux",
-      "date_creneau": "2025-02-09T11:15:00",
-      "notes_supplementaires": "Emballages alimentaires propres.",
-      "id_particulier": 105,
-      "id": "d966"
-    },
-    {
       "id": "694c",
       "dechets": [
         {
           "type_de_dechet": "Électronique",
-          "poids_estime": "222"
+          "poids_estime": 222
         },
         {
           "type_de_dechet": "Papier",
-          "poids_estime": "222"
+          "poids_estime": 222
         }
       ],
       "adresse_de_collecte": "Veritatis neque volu",
-      "ville_id": "1",
+      "ville_id": 1,
       "date_creneau": "2020-01-06T13:47",
-      "status": "En Attente",
-      "id_particulier": "1"
+      "status": "Occupée",
+      "id_particulier": "c168"
     },
     {
       "id": "1e00",
@@ -178,94 +139,88 @@
       "adresse_de_collecte": "Vero harum do exerci",
       "date_creneau": "2004-12-13T12:14",
       "notes_supplementaires": "Sed voluptatibus eli",
-      "id_ville": "1",
-      "status": "En Attente",
-      "id_particulier": "1"
+      "ville_id": 1,
+      "status": "Occupée",
+      "id_particulier": "c168"
     },
     {
-      "id": "faa9",
+      "id": "e460",
       "dechets": [
         {
           "type_de_dechet": "Plastique",
           "poids_estime": 1000
         }
       ],
-      "adresse_de_collecte": "ff",
-      "date_creneau": "2025-02-01T14:46",
-      "notes_supplementaires": "",
-      "id_ville": "1",
-      "status": "En Attente",
-      "id_particulier": "1"
+      "adresse_de_collecte": "Esse quia corrupti",
+      "date_creneau": "1970-01-03T13:36",
+      "notes_supplementaires": "Anim vel est aut po",
+      "ville_id": "1",
+      "status": "En cours",
+      "id_particulier": "c168"
     },
     {
-      "id": "7580",
-      "dechets": [
-        {
-          "type_de_dechet": "Papier",
-          "poids_estime": 10000
-        }
-      ],
-      "adresse_de_collecte": "Iusto irure eveniet",
-      "date_creneau": "1985-02-05T16:57",
-      "notes_supplementaires": "Quam suscipit laboru",
-      "id_ville": "1",
-      "status": "En Attente",
-      "id_particulier": "1"
-    },
-    {
-      "id": "8d60",
+      "id": "2680",
       "dechets": [],
-      "adresse_de_collecte": "Fugit et ducimus s",
-      "date_creneau": "1986-03-17T13:41",
-      "notes_supplementaires": "Aut sapiente at temp",
-      "id_ville": "1",
-      "status": "En Attente",
-      "id_particulier": "1"
+      "adresse_de_collecte": "Cum odio ut aliquid ",
+      "date_creneau": "1983-11-02T12:41",
+      "notes_supplementaires": "Aspernatur consequat",
+      "ville_id": "1",
+      "status": "Occupée",
+      "id_particulier": "c168"
     },
     {
-      "id": "db0e",
+      "id": "17be",
       "dechets": [
         {
           "type_de_dechet": "Verre",
-          "poids_estime": 8511
-        }
-      ],
-      "adresse_de_collecte": "Maiores cupidatat te",
-      "date_creneau": "1990-08-14T10:00",
-      "notes_supplementaires": "Aut veniam et aliqu",
-      "id_ville": "1",
-      "status": "En Attente",
-      "id_particulier": "1"
-    },
-    {
-      "id": "fe19",
-      "dechets": [
-        {
-          "type_de_dechet": "Papier",
-          "poids_estime": 111111
-        }
-      ],
-      "adresse_de_collecte": "Odit laboriosam adi",
-      "date_creneau": "2003-11-01T16:28",
-      "notes_supplementaires": "In ipsa deserunt ev",
-      "id_ville": "1",
-      "status": "En Attente",
-      "id_particulier": "1"
-    },
-    {
-      "id": "774d",
-      "dechets": [
-        {
-          "type_de_dechet": "Papier",
           "poids_estime": 1000
         }
       ],
-      "adresse_de_collecte": "Sint et laboriosam ",
-      "date_creneau": "1974-08-15T17:19",
-      "notes_supplementaires": "Labore inventore ips",
-      "id_ville": "1",
-      "status": "En Attente",
-      "id_particulier": "1"
+      "adresse_de_collecte": "Inventore non cumque",
+      "date_creneau": "2006-11-23T10:32",
+      "notes_supplementaires": "Quos minim dolor et ",
+      "ville_id": "1",
+      "status": "a",
+      "id_particulier": "c168"
+    },
+    {
+      "id": "feef",
+      "dechets": [],
+      "adresse_de_collecte": "Magni sit veniam co",
+      "date_creneau": "1984-03-23T14:41",
+      "notes_supplementaires": "Perferendis laborum ",
+      "ville_id": "1",
+      "status": "Occupée",
+      "id_particulier": "c168"
+    }
+  ],
+  "villes": [
+    {
+      "id": "1",
+      "ville": "Agadir"
+    }
+  ],
+  "requests": [
+    {
+      "id": "1",
+      "userId": "8976",
+      "dropOffRequestId": "2680"
+    }
+    ,{
+      "id": "2",
+      "userId": "8976",
+      "dropOffRequestId": "e460"
+    },
+    {
+      "id": "3",
+      "userId": "8976",
+      "dropOffRequestId": "feef"
+    }
+    ,
+    {
+      "id": "4",
+      "userId": "d",
+      "dropOffRequestId": "d"
     }
   ]
 }

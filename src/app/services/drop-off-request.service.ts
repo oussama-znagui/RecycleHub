@@ -19,4 +19,19 @@ export class DropOffRequestService {
   deleteDropOffRequest(id: String): Observable<void> {
     return this.http.delete<void>(`${this.apiUrl}/${id}`);
   }
+
+  getDropOffRequestsForCollector(): Observable<DropOffRequest[]>{
+    return this.http.get<DropOffRequest[]>(`${this.apiUrl}?status=En%20Attente`)
+
+  }
+
+  dropOffRequestOcc(id: String): Observable<DropOffRequest>{
+   
+    const url = `${this.apiUrl}/${id}`;
+    const body = { status: 'Occupée' };     
+
+    console.log("heeeere");
+    
+    return this.http.patch<DropOffRequest>(url, body);
+  }
 }

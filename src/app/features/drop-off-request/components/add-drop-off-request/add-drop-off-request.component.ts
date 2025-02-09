@@ -24,7 +24,7 @@ export class AddDropOffRequestComponent {
       adresse_de_collecte: ['', Validators.required],
       date_creneau: ['', [Validators.required, this.validateHour]],
       notes_supplementaires: [''],
-      id_ville: [null, Validators.required],
+      ville_id: [null, Validators.required],
       status: ["En Attente"]
     })
    }

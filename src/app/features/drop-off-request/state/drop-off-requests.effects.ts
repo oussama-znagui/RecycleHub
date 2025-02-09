@@ -24,7 +24,7 @@ export class DropOffRequestsEffects{
         return this.actions$.pipe(
             ofType(DropOffRequestsActions.loadDropOffRequests),
             withLatestFrom(this.store.pipe(select(getUserId))),
-            switchMap(([action, userId]) => {
+            switchMap(([userId]) => {
                
                 const url = `http://localhost:3000/drop-off-requests?id_particulier=${userId}`;
                 

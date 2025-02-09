@@ -1,0 +1,122 @@
+:host{
+    background: rgb(185,217,235);
+    background: linear-gradient(155deg, rgba(185,217,235,1) 0%, rgba(228,247,211,1) 25%, rgba(188,212,226,1) 69%, rgba(226,244,255,1) 100%);
+        backdrop-filter: blur(10px); 
+    
+        min-height: 100vh;
+        padding: 2rem 0;
+        
+}
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+   padding: 2rem 0;
+}
+
+.stats{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.stats div{
+    background-color: aliceblue;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    backdrop-filter: blur(10px); 
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;   
+
+
+}
+
+.stats div span{
+   font-size: 2rem;
+   font-weight: bold;
+}
+
+
+.add{
+    background-color: #1a271d;
+    color: rgb(227, 241, 225);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    margin: 0 .5rem;
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+    font-weight: 600;
+}
+
+.add:hover{
+    background-color: rgb(227, 241, 225);
+    color: #1a271d;
+
+}
+
+.logout{
+    background-color: #a50e0e;
+    color: rgb(227, 241, 225);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    margin: 0 .5rem;
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+    font-weight: 600;
+}
+
+.logout:hover{
+    background-color: rgb(227, 241, 225);
+    color: #1a271d;
+
+}
+.navi{
+    display: flex;
+    align-items: center;
+}
+.explorer{
+    width: 80%;
+    margin: auto;
+   
+
+
+}
+.explorer h1{
+    text-align: center;
+    margin: 2rem 0;
+}
+.requests{
+    display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 2rem;
+}
+
+
+    .requests > div {
+      background-color: rgb(196, 238, 196);
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      border-radius: 1rem;
+      }
+
+
+.collecter{
+    padding: .5rem 1rem;
+    background-color: #54be6d;
+    border: none;
+    font-weight: bold;
+    border-radius: .5rem;
+}
+.collecter:hover{
+    background-color: #24813a; 
+}
