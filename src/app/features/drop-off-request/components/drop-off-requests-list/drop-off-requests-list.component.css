@@ -30,10 +30,10 @@ table, th, td {
   }
 
   .container {
-    /* Dimensions et positionnement */
+   
 
   
-    /* Couleurs de fond */
+    
     background: linear-gradient(
       135deg,
       rgba(255, 255, 255, 0.8),
@@ -41,19 +41,19 @@ table, th, td {
       rgba(220, 255, 220, 0.8)
     );
   
-    /* Effet de flou */
+   
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
   
-    /* Effet d'ombre */
+  
     box-shadow: 
       0 8px 32px 0 rgba(31, 38, 135, 0.37),
       inset 0 0 0 1px rgba(255, 255, 255, 0.1);
   
-    /* Bordures arrondies */
+    
     border-radius: 10px;
   
-    /* Effet de verre */
+   
     border: 1px solid rgba(255, 255, 255, 0.18);
   }
  
@@ -76,9 +76,7 @@ button:hover {
 button:active {
     transform: translateY(0);
 }
-button svg {
-    margin-right: 8px;
-}
+
 .update {
     background-color: #4CAF50;
     color: white;
@@ -93,6 +91,16 @@ button svg {
 .delete:hover {
     background-color: #da190b;
 }
+
+.more{
+    background-color: #23b605;
+    color: white;
+}
+
+.more:hover {
+    background-color: #006909;
+}
+
 .actions{
     display: flex;
     align-items: center;

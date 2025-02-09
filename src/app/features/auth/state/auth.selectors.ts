@@ -9,5 +9,5 @@ export const selectAuthError = createSelector(
 
 export const getUserId = createSelector(
     selectAuthState,
-    (state: AuthState) => state.user?.uuid
+    (state) => state.user?.uuid || null 
   );

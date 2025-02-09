@@ -6,66 +6,52 @@
         Ajouter Une demande de depot
     </h1>
     <form [formGroup]="form" (ngSubmit)="onSubmit()">
-       <div class="part1">
-        <div>
-            <label for="">Type de déchet à recycler</label>
-            <select id="type">
-                <option value="">plastique</option>
-                <option value="">verre</option>
-                <option value="">papier</option>
-                <option value="">métal</option>
+        <label>Déchets :</label>
+        <div formArrayName="dechets">
+          <div *ngFor="let dechet of dechets.controls; let i = index" [formGroupName]="i">
+            <label>Type :</label>
+            <select formControlName="type_de_dechet">
+              <option *ngFor="let type of typesDeDechetOptions" [value]="type">{{ type }}</option>
             </select>
+           
+           
+      
+            <label>Poids estimé (kg) :</label>
+            <input type="number" formControlName="poids_estime"  />
+            
+          
+            <button type="button" (click)="removeDechet(i)"> Supprimer</button>
+          </div>
         </div>
-        <div>
-            <label for="">Poids estimé</label>
-            <input id="poids_estime" formControlName="poids_estime"  type="number">
-            @if (form.controls['poids_estime'].invalid && form.controls['poids_estime'].touched) {
-                <div class="error" >
-                    * poids estime obligatoire (minimum 1000 KG).
-                  </div>
+        <button type="button" (click)="addDechet()"> Ajouter un Déchet</button>
+    
+        <label>Adresse de Collecte :</label>
+        <input type="text" formControlName="adresse_de_collecte"  />
+        @if (form.controls['adresse_de_collecte'].invalid && form.controls['adresse_de_collecte'].touched) {
+          <div>
+            Adresse obligatoire
+          </div>
+        }
+        <select name="" id="id_ville" formControlName="id_ville">
+            <option value="1">Ville</option>
+            @if (form.controls['id_ville'].invalid && form.controls['id_ville'].touched) {
+              <div>
+                ville obligatoire
+              </div>
             }
-        </div>
-       </div>
-        <div>
-            <label for="">Adresse de collecte</label>
-            <div class="adresse">
-
-                <input id="adresse_de_collecte" formControlName="adresse_de_collecte" type="text" placeholder="Adresse">
-
-                @if (form.controls['adresse_de_collecte'].invalid && form.controls['adresse_de_collecte'].touched) {
-                    <div class="error" >
-                        * L'adresse SVP !!
-                      </div>
-                }
-
-
-            <select id="ville" formControlName="ville">
-                <option value="">---Ville---</option>
-                <option value="1">Agadir</option>
-            </select>
-            @if (form.controls['ville'].invalid && form.controls['ville'].touched) {
-                <div class="error" >
-                    * La ville SVP !!
-                  </div>
-            }
-            </div>
-        </div>
-        <div>
-            <label for="">Date et créneau horaire souhaités entre 09h00 et 18h00</label>
-
-            <input type="datetime-local" id="date_creneau" formControlName="date_creneau">
-
-            @if (form.controls['date_creneau'].invalid && form.controls['date_creneau'].touched) {
-                <div>
-                    * Date obligatoire et doit être entre 09h00 et 18h00.
-                </div>
-            }
-        </div>
-        <div>
-            <textarea id="notes_supplementaires" placeholder="Notes supplémentaires"></textarea>
-        </div>
-       
-          <button  type="submit" [disabled]="form.invalid" >Envoyer</button>
-
-    </form>
+        </select>
+      
+        <label>Date du Créneau :</label>
+        <input type="datetime-local" formControlName="date_creneau"  />
+        @if (form.controls['date_creneau'].invalid && form.controls['date_creneau'].touched) {
+          <div>
+            Date et créneau horaire souhaités entre 09h00 et 18h00
+          </div>
+        }
+      
+        <label>Notes Supplémentaires :</label>
+        <textarea id="notes_supplementaires" formControlName="notes_supplementaires"></textarea>
+      
+        <button type="submit" [disabled]="form.invalid">Ajouter</button>
+      </form>
 </div>

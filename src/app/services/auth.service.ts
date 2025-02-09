@@ -2,13 +2,19 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { map, Observable } from 'rxjs';
 import { User } from '../models/user';
+import { AuthState } from '../features/auth/state/auth.reducer';
+import { Store } from '@ngrx/store';
+import { selectAuthState } from '../features/auth/state/auth.selectors';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
+  user$: Observable<any>;
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient,private store: Store<AuthState>) { 
+    this.user$ = this.store.select(selectAuthState);
+  }
 
   private url = "http://localhost:3000/users"
 
@@ -20,5 +26,14 @@ export class AuthService {
         return user || null
       })
     )
+
+    
   }
+
+  getUser(): Observable<any> {
+    return this.user$;
+  }
+
+
+
 }

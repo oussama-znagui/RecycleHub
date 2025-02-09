@@ -6,35 +6,29 @@
       
     <h1>Signup</h1>
 
-<div class="login_form">
+<form class="login_form"  [formGroup]="signupForm" (ngSubmit)="onSubmit()">
     <div>
         <label for="">Username</label>
-        <input type="text">
+        <input type="text" id="username" formControlName="username">
     </div>
     <div>
-        <label for="">Email</label>
-        <input type="text">
+        <label for="" >Email</label>
+        <input type="text" id="email" formControlName="email">
     </div>
-    <div>
-        <label for="">Role</label>
-        <select name="" id="">
-            <option value="">Collecteur</option>
-            <option value="">particulier</option>
-        </select>
-    </div>
+   
     <div>
         <label for="">Password</label>
-        <input type="password">
+        <input type="password" id="password" formControlName="password">
     </div>
     <div>
         <label for="">Confirmez le mdp</label>
         <input type="password">
     </div>
-    <button class="signup"><span>Signup</span> <svg  aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+    <button type="submit" [disabled]="signupForm.invalid" class="signup"><span>Signup</span> <svg  aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/>
       </svg>
       </button>
     <p>Avez vous deja un compte <a href="">LogIn</a> </p>
-</div>
+</form>
 </div>
 

@@ -8,6 +8,9 @@
 }
 
 @if (signup) {
-    <app-signup (signupOffEvent)="signup=false" />
+    <app-signup (signupOffEvent)="signup=false" (signupOffEvent)="signupSuccess=true" />
 }
 
+@if (signupSuccess) {
+    <app-signup-success />
+}

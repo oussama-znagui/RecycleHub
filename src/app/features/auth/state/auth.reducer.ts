@@ -10,13 +10,24 @@ export interface AuthState{
 }
 
 const initialState: AuthState = {
-    user: null,
+    user: JSON.parse(localStorage.getItem('user') || 'null'),
     error: null
 }
 
 export const authReducer = createReducer(
     initialState,
-    on(AuthActions.loginSuccess,(state, {user}) => ({ ...state, user, error: null })),
+    on(AuthActions.loginSuccess,(state, {user}) => {
+        localStorage.setItem('user', JSON.stringify(user));
+       return {...state, user, error: null }
+    }),
+
+
     on(AuthActions.loginFailure, (state, { error }) => ({ ...state, user: null, error })),
-    on(AuthActions.logout, () => initialState)
+    on(AuthActions.logout, () => {
+        localStorage.removeItem('user'); 
+        return { user: null, error: null };
+    }),
+    on(AuthActions.signupSuccess, (state, { user }) => ({ ...state, user, error: null })),
+    on(AuthActions.signupFailure, (state, { error }) => ({ ...state, user: null, error }))
+
 )

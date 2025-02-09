@@ -1,0 +1,22 @@
+<div class="card">
+   
+    <h2>Demande de Collecte</h2>
+    <p><span class="label">ID:</span> {{request?.id}}</p>
+    <p><span class="label">Déchets:</span></p>
+    @for (dechet of request?.dechets; track dechet.type_de_dechet) {
+        <div class="waste-item">
+            <p>Type: {{dechet.type_de_dechet}}</p>
+            <p>Estimated Weight: {{dechet.poids_estime}} kg</p>
+        </div>
+    }
+ 
+    
+    <p><span class="label">Collection Address:</span> {{request?.adresse_de_collecte}}</p>
+    <p><span class="label">Collection Date:</span> {{request?.date_creneau}}</p>
+    <p><span class="label">Additional Notes:</span> {{request?.notes_supplementaires}}</p>
+   
+    <p><span class="label">City ID:</span> {{request?.id_ville}}</p>
+    <div class="status">
+        <span class="label">Status:</span> {{request?.status}}
+    </div>
+</div>

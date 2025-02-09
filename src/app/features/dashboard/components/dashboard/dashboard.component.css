@@ -3,7 +3,8 @@
 background: linear-gradient(155deg, rgba(185,217,235,1) 0%, rgba(228,247,211,1) 25%, rgba(188,212,226,1) 69%, rgba(226,244,255,1) 100%);
     backdrop-filter: blur(10px); 
 
-    height: 100vh;
+    min-height: 100vh;
+    padding: 2rem 0;
 }
 
 .hero{
@@ -37,7 +38,7 @@ background: linear-gradient(155deg, rgba(185,217,235,1) 0%, rgba(228,247,211,1) 
 }
 
 
-button{
+.add{
     background-color: #1a271d;
     color: rgb(227, 241, 225);
     border: none;
@@ -50,8 +51,51 @@ button{
     font-weight: 600;
 }
 
-button:hover{
+.add:hover{
     background-color: rgb(227, 241, 225);
     color: #1a271d;
 
+}
+
+.logout{
+    background-color: #a50e0e;
+    color: rgb(227, 241, 225);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    margin: 0 .5rem;
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+    font-weight: 600;
+}
+
+.logout:hover{
+    background-color: rgb(227, 241, 225);
+    color: #1a271d;
+
+}
+.navi{
+    display: flex;
+    align-items: center;
+}
+
+.details{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(8px); 
+    z-index: 100;
+    position: absolute;
+    top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    
+}
+svg{
+    position: absolute ;
+    top: 5%;
+    left: 95%;
+    cursor: pointer;
 }

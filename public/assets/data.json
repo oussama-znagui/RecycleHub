@@ -5,19 +5,112 @@
       "username": "user1",
       "email": "user1@example.com",
       "password": "password123",
-      "role": "particulier"
+      "role": "particulier",
+      "id": "c168"
     },
     {
       "uuid": "2",
       "username": "collector1",
       "email": "collector1@example.com",
       "password": "password456",
-      "role": "collecteur"
+      "role": "collecteur",
+      "id": "8976"
+    },
+    {
+      "id": "aaf7",
+      "username": "",
+      "email": "",
+      "password": "",
+      "role": "particulier"
+    },
+    {
+      "id": "d285",
+      "username": "",
+      "email": "",
+      "password": "",
+      "role": "particulier"
+    },
+    {
+      "id": "a866",
+      "username": "lefuso",
+      "email": "cukagyt@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "role": "particulier"
+    },
+    {
+      "id": "0e51",
+      "username": "lefuso",
+      "email": "cukagyt@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "role": "particulier"
+    },
+    {
+      "id": "06a1",
+      "username": "lefuso",
+      "email": "cukagyt@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "role": "particulier"
+    },
+    {
+      "id": "b14c",
+      "username": "lefuso",
+      "email": "cukagyt@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "role": "particulier"
+    },
+    {
+      "id": "b81d",
+      "username": "lefuso",
+      "email": "cukagyt@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "role": "particulier"
+    },
+    {
+      "id": "5964",
+      "username": "lekysixis",
+      "email": "fado@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "role": "particulier"
+    },
+    {
+      "id": "a74e",
+      "username": "lekysixis",
+      "email": "fado@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "role": "particulier"
+    },
+    {
+      "id": "5332",
+      "username": "lekysixis",
+      "email": "fado@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "role": "particulier"
+    },
+    {
+      "id": "320b",
+      "username": "zazusyzib",
+      "email": "zukuzu@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "role": "particulier"
+    },
+    {
+      "id": "92bb",
+      "username": "namohiliqu",
+      "email": "wizi@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "role": "particulier"
+    },
+    {
+      "id": "e7e2",
+      "username": "fyqaf",
+      "email": "xahera@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "role": "particulier"
     }
   ],
   "drop-off-requests": [
     {
-      "id": 1,
+      "id": "1",
       "type_de_dechet": "plastique",
       "photos": [],
       "poids_estime": 1500,
@@ -27,7 +120,7 @@
       "id_particulier": 101
     },
     {
-      "id": 2,
+      "id": "2",
       "type_de_dechet": "verre",
       "photos": [],
       "poids_estime": 2000,
@@ -37,27 +130,7 @@
       "id_particulier": 102
     },
     {
-      "id": 3,
-      "type_de_dechet": "papier",
-      "photos": [],
-      "poids_estime": 1200,
-      "adresse_de_collecte": "78 Boulevard Durable, Marseille",
-      "date_creneau": "2025-02-08T09:00:00",
-      "notes_supplementaires": "Journaux et magazines.",
-      "id_particulier": 1
-    },
-    {
-      "id": 4,
-      "type_de_dechet": "métal",
-      "photos": [],
-      "poids_estime": 1800,
-      "adresse_de_collecte": "23 Rue du Recyclage, Toulouse",
-      "date_creneau": "2025-02-08T17:45:00",
-      "notes_supplementaires": "Canettes en aluminium.",
-      "id_particulier": 104
-    },
-    {
-      "id": 5,
+      "id": "5",
       "type_de_dechet": "plastique",
       "photos": [],
       "poids_estime": 2500,
@@ -66,7 +139,6 @@
       "notes_supplementaires": "Emballages alimentaires propres.",
       "id_particulier": 105
     },
-    
     {
       "type_de_dechet": "plastique",
       "photos": [],
@@ -76,6 +148,124 @@
       "notes_supplementaires": "Emballages alimentaires propres.",
       "id_particulier": 105,
       "id": "d966"
+    },
+    {
+      "id": "694c",
+      "dechets": [
+        {
+          "type_de_dechet": "Électronique",
+          "poids_estime": "222"
+        },
+        {
+          "type_de_dechet": "Papier",
+          "poids_estime": "222"
+        }
+      ],
+      "adresse_de_collecte": "Veritatis neque volu",
+      "ville_id": "1",
+      "date_creneau": "2020-01-06T13:47",
+      "status": "En Attente",
+      "id_particulier": "1"
+    },
+    {
+      "id": "1e00",
+      "dechets": [
+        {
+          "type_de_dechet": "Plastique",
+          "poids_estime": 1000
+        }
+      ],
+      "adresse_de_collecte": "Vero harum do exerci",
+      "date_creneau": "2004-12-13T12:14",
+      "notes_supplementaires": "Sed voluptatibus eli",
+      "id_ville": "1",
+      "status": "En Attente",
+      "id_particulier": "1"
+    },
+    {
+      "id": "faa9",
+      "dechets": [
+        {
+          "type_de_dechet": "Plastique",
+          "poids_estime": 1000
+        }
+      ],
+      "adresse_de_collecte": "ff",
+      "date_creneau": "2025-02-01T14:46",
+      "notes_supplementaires": "",
+      "id_ville": "1",
+      "status": "En Attente",
+      "id_particulier": "1"
+    },
+    {
+      "id": "7580",
+      "dechets": [
+        {
+          "type_de_dechet": "Papier",
+          "poids_estime": 10000
+        }
+      ],
+      "adresse_de_collecte": "Iusto irure eveniet",
+      "date_creneau": "1985-02-05T16:57",
+      "notes_supplementaires": "Quam suscipit laboru",
+      "id_ville": "1",
+      "status": "En Attente",
+      "id_particulier": "1"
+    },
+    {
+      "id": "8d60",
+      "dechets": [],
+      "adresse_de_collecte": "Fugit et ducimus s",
+      "date_creneau": "1986-03-17T13:41",
+      "notes_supplementaires": "Aut sapiente at temp",
+      "id_ville": "1",
+      "status": "En Attente",
+      "id_particulier": "1"
+    },
+    {
+      "id": "db0e",
+      "dechets": [
+        {
+          "type_de_dechet": "Verre",
+          "poids_estime": 8511
+        }
+      ],
+      "adresse_de_collecte": "Maiores cupidatat te",
+      "date_creneau": "1990-08-14T10:00",
+      "notes_supplementaires": "Aut veniam et aliqu",
+      "id_ville": "1",
+      "status": "En Attente",
+      "id_particulier": "1"
+    },
+    {
+      "id": "fe19",
+      "dechets": [
+        {
+          "type_de_dechet": "Papier",
+          "poids_estime": 111111
+        }
+      ],
+      "adresse_de_collecte": "Odit laboriosam adi",
+      "date_creneau": "2003-11-01T16:28",
+      "notes_supplementaires": "In ipsa deserunt ev",
+      "id_ville": "1",
+      "status": "En Attente",
+      "id_particulier": "1"
+    },
+    {
+      "id": "774d",
+      "dechets": [
+        {
+          "type_de_dechet": "Papier",
+          "poids_estime": 1000
+        }
+      ],
+      "adresse_de_collecte": "Sint et laboriosam ",
+      "date_creneau": "1974-08-15T17:19",
+      "notes_supplementaires": "Labore inventore ips",
+      "id_ville": "1",
+      "status": "En Attente",
+      "id_particulier": "1"
     }
   ]
 }
