@@ -1,0 +1,31 @@
+
+
+
+
+    <div class="profile-card" *ngIf="user$ | async as user">
+      <div class="avatar">
+        <i class="fas fa-user">
+          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" viewBox="0 0 24 24">
+            <path fill-rule="evenodd" d="M12 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm-2 9a4 4 0 0 0-4 4v1a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-1a4 4 0 0 0-4-4h-4Z" clip-rule="evenodd"/>
+          </svg>
+        </i>
+      </div>
+      <h1 class="name">{{ user.username }} # {{user.id}}</h1>
+      <p class="location">{{user.email}}</p>
+      <p class="profession">{{user.role}} - RecycleHub</p>
+      <p class="education">Columbia University - New York</p>
+      <div class="stats">
+        <div class="stat-item">
+          @if (user.role === "collecteur") {
+            <div class="stat-number">{{user.points}}</div>
+          <div class="stat-label">Points</div>
+          }
+        </div>
+      
+       
+      </div>
+      <button class="show-more">Modifier</button>
+      <button class="show-more" (click)="deleteAccount(user.id)">Supprimer</button>
+    </div>
+
+  

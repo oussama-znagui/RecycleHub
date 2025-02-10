@@ -34,3 +34,6 @@ export const signupFailure = createAction(
     "[Auth] Signup Failure",
     props<{ error: string }>()
 );
+
+
+export const deleteUser = createAction('[Auth] Delete User', props<{id: string}>());

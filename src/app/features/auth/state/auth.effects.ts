@@ -80,4 +80,16 @@ signup$ = createEffect(() =>
       )
   )
 );
+
+
+deleteUser$ = createEffect(() =>
+  this.actions$.pipe(
+    ofType(AuthActions.deleteUser),
+    tap(action => {
+      this.authService.deleteUser(action.id).subscribe()
+      this.router.navigate(['/'])
+    })
+  ),
+  { dispatch: false }
+);
 }

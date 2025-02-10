@@ -1,0 +1,41 @@
+:host{
+    
+}
+
+.container{
+    width: 30%;
+    background-color: rgb(119, 204, 119);
+    padding: 2rem;
+    border-radius: 2rem;
+    text-align: center;
+    position: absolute;
+    top: 100%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+button{
+    padding: .7rem 2rem;
+    border: none;
+    margin: 1rem 2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+
+    
+}
+
+.yes{
+    background-color: red;
+}
+
+.yes:hover{
+    background-color: rgb(236, 74, 74);
+}
+
+.no{
+    background-color: green;
+}
+.no:hover{
+    background-color: rgb(115, 238, 115);
+}

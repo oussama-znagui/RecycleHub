@@ -14,7 +14,8 @@ import { DropOffRequestDetaisComponent } from '../../../features/drop-off-reques
 })
 export class OccupedRequestsComponent {
   @Output() closeEvent = new EventEmitter();
-  toPendingAllert: boolean = false
+  @Output() openAleert = new EventEmitter<{id:String,action:String}>()
+  pendingCont: number = 0
   
 
   userId$: Observable<string | undefined>; 
@@ -37,7 +38,13 @@ export class OccupedRequestsComponent {
           console.log('Fetched data:', data[0].dropOffRequest);
           data.forEach((d) =>{
             this.requests.push(d.dropOffRequest)
+            if(d.dropOffRequest.status === "En cours"){
+              this.pendingCont++
+
+            }
           })
+          
+          
        
         },
         error: error => {
@@ -47,10 +54,16 @@ export class OccupedRequestsComponent {
     );
   }
 
-  toPending(){
+  toPending(id: String){
     this.closeEvent.emit()
-    this.toPendingAllert = true
+    this.openAleert.emit({id: id, action: "pending"}) 
 
+  }
+
+  toAccept(id: String){
+    this.closeEvent.emit()
+
+    this.openAleert.emit({id: id, action: "accept"}) 
   }
 
 }

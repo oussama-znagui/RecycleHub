@@ -1,6 +1,7 @@
 import { createReducer, on } from "@ngrx/store";
 import { User } from "../../../models/user";
 import * as AuthActions from './auth.actions';
+import { state } from "@angular/animations";
 
 
 
@@ -16,6 +17,7 @@ const initialState: AuthState = {
 
 export const authReducer = createReducer(
     initialState,
+    on(AuthActions.deleteUser, (state) => ({ ...state, user: null, })),
     on(AuthActions.loginSuccess,(state, {user}) => {
         localStorage.setItem('user', JSON.stringify(user));
        return {...state, user, error: null }
@@ -28,6 +30,8 @@ export const authReducer = createReducer(
         return { user: null, error: null };
     }),
     on(AuthActions.signupSuccess, (state, { user }) => ({ ...state, user, error: null })),
-    on(AuthActions.signupFailure, (state, { error }) => ({ ...state, user: null, error }))
+    on(AuthActions.signupFailure, (state, { error }) => ({ ...state, user: null, error })),
+    
+   
 
 )

@@ -7,14 +7,20 @@
 
        <div class="card">
         <app-drop-off-request-detais [request]="request" />
-        @if (request.status === "Occupée") {
-            <button class="enC" (click)="toPending()">
-                Je Suis sur place
-            </button>
+        @if (request.status === "Occupée" ) {
+          @if (pendingCont < 3) {
+            <button class="enC" (click)="toPending(request.id)">
+              Je Suis sur place
+          </button>
+          }
+          @else {
+            Vous avez deja 3 demande En cours
+          }
+           
         }
         @if (request.status === "En cours") {
           <div>
-            <button class="valid">
+            <button class="valid" (click)="toAccept(request.id)">
                 Valider
             </button>
             <button class="rejet">
@@ -27,6 +33,3 @@
     }
 </div>
 
-@if (toPendingAllert) {
-    
-}

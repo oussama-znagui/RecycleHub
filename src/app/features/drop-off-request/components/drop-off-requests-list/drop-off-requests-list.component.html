@@ -8,7 +8,7 @@
           <tr>
             <th>ID</th>
             <th>Type de déchet</th>
-            <th>Poids estimé</th>
+            
             <th>Adresse de collecte</th>
             <th>Date et créneau</th>
             <th></th>
@@ -18,8 +18,10 @@
           @for (request of requests | async; track request.id) {
             <tr>
               <td>{{request.id}}</td>
-              <td></td>
-              <td></td>
+              <td>@if (request.dechets.length > 0) {
+                {{request.dechets[0].type_de_dechet}}
+                } ....</td>
+            
               <td>{{request.adresse_de_collecte}}</td>
               <td>{{request.date_creneau}}</td>
              

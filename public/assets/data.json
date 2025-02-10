@@ -1,7 +1,6 @@
 {
   "users": [
     {
-   
       "username": "user1",
       "email": "user1@example.com",
       "password": "password123",
@@ -9,13 +8,13 @@
       "id": "c168"
     },
     {
-     
       "username": "collector1",
       "email": "collector1@example.com",
       "password": "password456",
       "role": "collecteur",
       "id": "8976",
-      "ville_id": 1
+      "ville_id": 2,
+      "points": 100
     },
     {
       "id": "aaf7",
@@ -107,27 +106,23 @@
       "email": "xahera@mailinator.com",
       "password": "Pa$$w0rd!",
       "role": "particulier"
+    },
+    {
+      "id": "cb30",
+      "username": "duwudazazo",
+      "email": "ditapifome@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "role": "particulier"
+    },
+    {
+      "id": "224e",
+      "username": "oussama",
+      "email": "saze@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "role": "particulier"
     }
   ],
   "drop-off-requests": [
-    {
-      "id": "694c",
-      "dechets": [
-        {
-          "type_de_dechet": "Électronique",
-          "poids_estime": 222
-        },
-        {
-          "type_de_dechet": "Papier",
-          "poids_estime": 222
-        }
-      ],
-      "adresse_de_collecte": "Veritatis neque volu",
-      "ville_id": 1,
-      "date_creneau": "2020-01-06T13:47",
-      "status": "Occupée",
-      "id_particulier": "c168"
-    },
     {
       "id": "1e00",
       "dechets": [
@@ -140,7 +135,7 @@
       "date_creneau": "2004-12-13T12:14",
       "notes_supplementaires": "Sed voluptatibus eli",
       "ville_id": 1,
-      "status": "Occupée",
+      "status": "Validée",
       "id_particulier": "c168"
     },
     {
@@ -154,16 +149,6 @@
       "adresse_de_collecte": "Esse quia corrupti",
       "date_creneau": "1970-01-03T13:36",
       "notes_supplementaires": "Anim vel est aut po",
-      "ville_id": "1",
-      "status": "En cours",
-      "id_particulier": "c168"
-    },
-    {
-      "id": "2680",
-      "dechets": [],
-      "adresse_de_collecte": "Cum odio ut aliquid ",
-      "date_creneau": "1983-11-02T12:41",
-      "notes_supplementaires": "Aspernatur consequat",
       "ville_id": "1",
       "status": "Occupée",
       "id_particulier": "c168"
@@ -184,13 +169,108 @@
       "id_particulier": "c168"
     },
     {
-      "id": "feef",
-      "dechets": [],
-      "adresse_de_collecte": "Magni sit veniam co",
-      "date_creneau": "1984-03-23T14:41",
-      "notes_supplementaires": "Perferendis laborum ",
+      "id": "da25",
+      "dechets": [
+        {
+          "type_de_dechet": "Papier",
+          "poids_estime": 1000
+        }
+      ],
+      "adresse_de_collecte": "afzc",
+      "date_creneau": "2025-02-10T17:36",
+      "notes_supplementaires": "nn",
       "ville_id": "1",
       "status": "Occupée",
+      "id_particulier": "c168"
+    },
+    {
+      "id": "9263",
+      "dechets": [
+        {
+          "type_de_dechet": "Métal",
+          "poids_estime": 1000
+        }
+      ],
+      "adresse_de_collecte": "Ullamco minus ullam ",
+      "date_creneau": "2011-02-05T14:43",
+      "notes_supplementaires": "Sequi ullam et offic",
+      "ville_id": "1",
+      "status": "Occupée",
+      "id_particulier": "c168"
+    },
+    {
+      "id": "884e",
+      "dechets": [
+        {
+          "type_de_dechet": "Métal",
+          "poids_estime": 1000
+        }
+      ],
+      "adresse_de_collecte": "Odio et aliquid labo",
+      "date_creneau": "1995-09-06T14:03",
+      "notes_supplementaires": "Quae exercitationem ",
+      "ville_id": "1",
+      "status": "Occupée",
+      "id_particulier": "c168"
+    },
+    {
+      "id": "ab83",
+      "dechets": [
+        {
+          "type_de_dechet": "Électronique",
+          "poids_estime": 1000
+        }
+      ],
+      "adresse_de_collecte": "Odit voluptatem Con",
+      "date_creneau": "1985-04-10T17:00",
+      "notes_supplementaires": "Et dolor doloribus n",
+      "ville_id": "1",
+      "status": "En cours",
+      "id_particulier": "c168"
+    },
+    {
+      "id": "6d26",
+      "dechets": [
+        {
+          "type_de_dechet": "Plastique",
+          "poids_estime": 1000
+        }
+      ],
+      "adresse_de_collecte": "Rerum esse non arch",
+      "date_creneau": "2011-03-20T15:16",
+      "notes_supplementaires": "Omnis lorem sint qua",
+      "ville_id": "1",
+      "status": "En cours",
+      "id_particulier": ""
+    },
+    {
+      "id": "93c1",
+      "dechets": [
+        {
+          "type_de_dechet": "Métal",
+          "poids_estime": 1000
+        }
+      ],
+      "adresse_de_collecte": "dd",
+      "date_creneau": "2025-02-10T16:00",
+      "notes_supplementaires": "",
+      "ville_id": "1",
+      "status": "En cours",
+      "id_particulier": "c168"
+    },
+    {
+      "id": "5519",
+      "dechets": [
+        {
+          "type_de_dechet": "Papier",
+          "poids_estime": 1000
+        }
+      ],
+      "adresse_de_collecte": "Temporibus impedit ",
+      "date_creneau": "1973-02-23T13:43",
+      "notes_supplementaires": "Incididunt praesenti",
+      "ville_id": "1",
+      "status": "En Attente",
       "id_particulier": "c168"
     }
   ],
@@ -202,25 +282,29 @@
   ],
   "requests": [
     {
-      "id": "1",
+      "id": "3cf6",
       "userId": "8976",
-      "dropOffRequestId": "2680"
-    }
-    ,{
-      "id": "2",
-      "userId": "8976",
-      "dropOffRequestId": "e460"
+      "requestId": "1e00"
     },
     {
-      "id": "3",
+      "id": "cd5f",
       "userId": "8976",
-      "dropOffRequestId": "feef"
-    }
-    ,
+      "requestId": "ab83"
+    },
     {
-      "id": "4",
-      "userId": "d",
-      "dropOffRequestId": "d"
+      "id": "953a",
+      "userId": "8976",
+      "requestId": "6d26"
+    },
+    {
+      "id": "251a",
+      "userId": "8976",
+      "requestId": "884e"
+    },
+    {
+      "id": "6b42",
+      "userId": "8976",
+      "requestId": "93c1"
     }
   ]
 }

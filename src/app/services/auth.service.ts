@@ -30,8 +30,24 @@ export class AuthService {
     
   }
 
-  getUser(): Observable<any> {
+  getUser(): Observable<User> {
     return this.user$;
+  }
+
+
+
+
+  deleteUser(id: string): Observable<User>{
+    console.log("ddd");
+      
+      console.log(`${this.url}/${id}`)
+      localStorage.clear()
+      
+       return this.http.delete<User>(`${this.url}/${id}`)
+      
+        
+     
+      
   }
 
 

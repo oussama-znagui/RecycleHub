@@ -21,7 +21,8 @@ export class DropOffRequestService {
   }
 
   getDropOffRequestsForCollector(): Observable<DropOffRequest[]>{
-    return this.http.get<DropOffRequest[]>(`${this.apiUrl}?status=En%20Attente`)
+    return this.http.get<DropOffRequest[]>(`http://localhost:3000/drop-off-requests?status=En%20Attente`)
+   
 
   }
 
@@ -33,5 +34,30 @@ export class DropOffRequestService {
     console.log("heeeere");
     
     return this.http.patch<DropOffRequest>(url, body);
+  }
+
+
+  
+  updateStatusToPending(id: String): Observable<DropOffRequest>{
+    const url = `${this.apiUrl}/${id}`;
+    const body = { status: 'En cours' };     
+
+    console.log("heeeere");
+    
+    return this.http.patch<DropOffRequest>(url, body);
+
+
+  }
+
+
+  updateStatusToAccept(id: String): Observable<DropOffRequest>{
+    const url = `${this.apiUrl}/${id}`;
+    const body = { status: 'Validée' };     
+
+    console.log("heeeere");
+    
+    return this.http.patch<DropOffRequest>(url, body);
+
+
   }
 }
